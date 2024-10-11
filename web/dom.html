@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="primeiro">Parágrafo1</p>
+    <p class="Teste">Parágrafo2</p>
+    <a href="https://portal.ifpe.edu.br/">Link</a>
+    <input type="text" name="descrição">
+    <button onclick="funcao()">getElementById</button>
+    <button onclick="funcao2()">getElementsByClassName</button>
+    <button onclick="funcao3()">getElementsByName</button>
+    <script>
+        function funcao(){
+            let elemento=document.getElementById("primeiro");
+            document.write("id:"+elemento.id);
+            document.write("TextContent:"+elemento.textContent);
+
+        }
+        function funcao2(){
+            let elementos=document.getElementsByClassName("Teste");
+            document.write(elementos[0].textContent);
+            document.write(elementos[1].textContent);
+        }
+        function funcao3(){
+            let elementos=document.getElementsByName("descrição");
+            document.write(elementos[0].textContent);
+        }
+    </script>
+</body>
+</html>
