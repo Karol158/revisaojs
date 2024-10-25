@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+</head>
+
+<body>
+    <p id="primeiro">Paragrafo 1</p>
+    <p class="Teste">Paragrafo 2</p>
+    <a href="https://portal.ifpe.edu.br/">Link</a>
+    <input type="text" name="descricao">
+    <button onclick="funcao()">querySelector</button>
+    <button onclick="funcao2()">querySelectorAll</button>
+    <button onclick="funcao3()">querySelectorAll</button>
+    <button onclick="funcao4()">classList1</button>
+    <script>
+        function funcao() {
+            let elemento = document.querySelector('p');
+            elemento.style.color = 'red';
+        }
+        function funcao2() {
+            let elementos = document.querySelectorAll('p');
+
+            elementos.forEach(
+                elementos => {
+                    console.log(elementos.textContent);
+                    elementos.style.color = "green";
+                    elementos.style.background="black";
+                }
+            );
+        }
+         function funcao3(){
+            let elementos=document.querySelectorAll('p');
+            elementos.forEach(
+            elementos=>{elementos.style.color="blue";
+                elementos.style.fontSize="100px";
+            }
+
+            );
+         }
+         function funcao4(){
+            let elemento=document.querySelector('Teste');
+            elemento.classList.add('FundoAzul');
+            elemento.classList.add('FonteVerde');
+            elemento.classList.remove('FonteSumblinhado');
+
+         }
+         
+         
+    </script>
+
+</body>
+
+</html>
