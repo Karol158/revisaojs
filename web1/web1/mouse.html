@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click</title>
+</head>
+
+<body>
+    <button id="botao">Clique</button>
+    <script>
+        let elemento = document.querySelector('#botao');
+        elemento.addEventListener('mouseouver', () => console.log("mouse ouver"));
+        elemento.addEventListener('mousedown', () => console.log("mouse down"));
+        elemento.addEventListener('mouseup', () => console.log("mouse up"));
+        elemento.addEventListener('click', () => console.log("Click"));
+        elemento.addEventListener('mouseout', () => console.log("mouse out"));
+
+
+
+
+    </script>
+</body>
+
+</html>
